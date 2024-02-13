@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Audio and Video Files</title>
+</head>
+<body>
+    <h1>Upload Audio and Video Files</h1>
+    <form action="http://127.0.0.1:5000/lip_sync_detection" method="post" enctype="multipart/form-data">
+        <label for="audio">Select Audio File:</label>
+        <input type="file" id="audio" name="audio" accept="audio/*">
+        <br><br>
+        <label for="video">Select Video File:</label>
+        <input type="file" id="video" name="video" accept="video/*">
+        <br><br>
+        <input type="submit" value="Upload Files">
+    </form>
+</body>
+</html>
